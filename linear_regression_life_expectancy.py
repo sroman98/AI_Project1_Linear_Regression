@@ -1,3 +1,7 @@
+# Sandra Román Rivera
+# Dataset obtained from:
+# https://www.kaggle.com/kumarajarshi/life-expectancy-who
+
 import numpy as np
 import math
 import pandas as pd
@@ -5,7 +9,10 @@ import pandas as pd
 from sklearn import linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 
+# Load data
 df = pd.read_csv('Life Expectancy Data.csv', usecols=["Year", "Life expectancy ", "Alcohol", " BMI ", "Income composition of resources", "Schooling"])
+
+# Clean data
 df.replace(['', 0], np.nan, inplace=True)
 df.dropna(inplace=True)
 
@@ -14,6 +21,7 @@ attributes = ["Alcohol", " BMI ", "Income composition of resources", "Schooling"
 df_x = df[attributes]
 df_y = df["Life expectancy "]
 
+# Use 20% of the data for testing
 test_size = -1 * math.floor(df_y.size * 0.2)
 
 # Split the data into training/testing sets
