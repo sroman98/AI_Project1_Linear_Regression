@@ -4,11 +4,11 @@ This program uses linear regression on Life Expectancy data from WHO (World Heal
 
 I got the dataset from https://www.kaggle.com/kumarajarshi/life-expectancy-who in case you want to check it out. The dataset contains data from the years 2000 to 2015 from countries all over the world. Predictions are based on this dataset.
 
-The model's coefficients are:
+The model's **coefficients** are:
 
 [-2.47261553e-01  1.14518869e-02  6.09293093e+01 -4.71383539e-01]
 
-This correspond to the parameters:
+This correspond to the **parameters**:
 
 [Alcohol    BMI   Income composition of resources    Schooling]
 
